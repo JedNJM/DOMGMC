@@ -54,9 +54,9 @@ FullPrice = document.getElementById('finalPrice');
 const val1 = document.querySelector("#val1");
 const dec1 = document.querySelector("#dec1");
 const inc1 = document.querySelector("#inc1");
-const price1 = document.querySelector("#price1");
 
 inc1.addEventListener("click", function () {
+  const price1 = document.querySelector("#price1");
 
     price = parseFloat(price1.textContent); 
  
@@ -85,9 +85,9 @@ inc1.addEventListener("click", function () {
 const val2 = document.querySelector("#val2");
 const dec2 = document.querySelector("#dec2");
 const inc2 = document.querySelector("#inc2");
-const price2 = document.querySelector("#price2");
 
 inc2.addEventListener("click", function () {
+  const price2 = document.querySelector("#price2");
 
     price = parseFloat(price2.textContent); 
  
@@ -118,10 +118,10 @@ inc2.addEventListener("click", function () {
  const val3 = document.querySelector("#val3");
  const dec3 = document.querySelector("#dec3");
  const inc3 = document.querySelector("#inc3");
- const price3 = document.querySelector("#price3");
  
  inc3.addEventListener("click", function () {
- 
+  const price3 = document.querySelector("#price3");
+
      price = parseFloat(price3.textContent); 
   
     console.log(price);
@@ -134,7 +134,7 @@ inc2.addEventListener("click", function () {
     if (parseInt(val3.value) > 0) 
     {  const price = parseFloat(price3.textContent);
       val3.value = parseInt(val3.value) - 1;
-      price3.textContent = (price - 500.00);
+      price3. = (price - 500.00);
       FullPrice.value = parseFloat(FullPrice.value) - 500.00
     }
       
@@ -143,11 +143,4 @@ inc2.addEventListener("click", function () {
     }
   });
   
- 
-
-
-// TOTAL PRICE
-
-
-console.log(FullPrice.value)
-
+textContent
